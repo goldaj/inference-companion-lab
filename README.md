@@ -9,9 +9,10 @@ Le mode compagnon utilise seulement la marge de ressources que le poste peut pr�
 - Phase : fondation scientifique et préparation du laboratoire.
 - Mode retenu : compagnon non privilégié et non destructif.
 - Premier poste : Windows 10, Intel Core i5-6600K, 16 Gio de RAM, NVIDIA GeForce GTX 1070 8 Gio.
+- Sauvegarde distante : dépôt GitHub privé `goldaj/inference-companion-lab`.
 - Modèle de départ : pas encore choisi.
 - Moteur de référence : pas encore choisi.
-- Logiciels ajoutés au poste : aucun.
+- Logiciels ajoutés au poste : GitHub CLI 2.99.0, uniquement pour l’authentification et la publication du dépôt.
 - Données volumineuses : `D:\InferenceCompanionLab`.
 
 Consulter [PROJECT_STATE.md](PROJECT_STATE.md) pour l’état opérationnel exact.

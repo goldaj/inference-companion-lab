@@ -929,9 +929,11 @@ Ce poste est un bon premier cas : matériel suffisamment ancien pour rendre les 
 
 - le dépôt Git existant et vide a été conservé ;
 - la branche de travail `codex/foundation` a été créée ;
+- un dépôt GitHub privé `goldaj/inference-companion-lab` a été créé comme sauvegarde distante ;
 - le laboratoire `D:\InferenceCompanionLab` et ses sous-répertoires ont été créés ;
 - un inventaire matériel en lecture seule a été effectué ;
-- aucun logiciel supplémentaire n’a été installé ;
+- GitHub CLI 2.99.0 a été installé exclusivement pour authentifier le compte et publier le dépôt ;
+- aucune dépendance d’inférence ou de mesure n’a encore été installée ;
 - aucun service n’a été arrêté ;
 - aucun fichier personnel n’a été supprimé ;
 - aucun réglage système n’a été modifié ;

@@ -91,3 +91,10 @@ Date : 2026-09-03
 Statut : accepté
 
 La première démonstration compare sans inférence, statique conservateur, statique agressif et adaptatif élémentaire sur une trace identique.
+
+## ADR-013 — Dépôt GitHub privé et données lourdes séparées
+
+Date : 2026-09-03
+Statut : accepté
+
+Le code et les documents sont sauvegardés dans le dépôt GitHub privé `goldaj/inference-companion-lab`. Les modèles, traces, runs et résultats volumineux restent hors Git dans `D:\InferenceCompanionLab`. Cette séparation évite de publier des modèles, des données personnelles ou des artefacts volumineux et signifie qu’une sauvegarde indépendante du laboratoire de données devra être organisée séparément si nécessaire.

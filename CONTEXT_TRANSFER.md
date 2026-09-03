@@ -87,12 +87,14 @@ Le contrat recommandé pour le premier prototype est E1.
 - HDD WDC 1 To : environ 372 Gio libres sur `D:`.
 - Fichier d’échange sur `D:`.
 - Profil d’alimentation « Performances élevées ».
-- Aucun logiciel n’a été installé pour le projet à ce stade.
+- GitHub CLI 2.99.0 est le seul logiciel ajouté pour le projet ; il sert à l’authentification et à la sauvegarde du dépôt, pas à l’inférence.
 
 ## Répertoires
 
 - Dépôt Git : `C:\Users\golda\Documents\ChatGPT\software d'optimisation générale d'inférence`
 - Branche : `codex/foundation`
+- Dépôt GitHub privé : `https://github.com/goldaj/inference-companion-lab`
+- Remote : `origin`
 - Laboratoire de données : `D:\InferenceCompanionLab`
 - Modèles originaux : `D:\InferenceCompanionLab\models`
 - Artefacts dérivés : `D:\InferenceCompanionLab\derived`
@@ -105,7 +107,7 @@ Le contrat recommandé pour le premier prototype est E1.
 
 ## État exact et prochaine étape
 
-La structure de laboratoire et la documentation fondatrice sont créées. Il n’existe pas encore de moteur propre au projet. Aucune dépendance n’a été installée et aucune modification système n’a été faite.
+La structure de laboratoire et la documentation fondatrice sont créées et sauvegardées dans un dépôt GitHub privé. Il n’existe pas encore de moteur propre au projet. Aucune dépendance d’inférence n’a été installée. La seule installation ajoutée est GitHub CLI 2.99.0 ; aucune configuration matérielle, aucun service, pilote ou firmware n’a été modifié.
 
 La prochaine étape est de finaliser la spécification expérimentale v0.1 : choisir le modèle initial, le moteur de référence, la génération déterministe, les contextes, les canaris, le budget de gêne et la durée des traces. Ensuite, construire l’observateur passif.
 

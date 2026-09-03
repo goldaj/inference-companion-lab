@@ -6,9 +6,10 @@ Dernière mise à jour : 2026-09-03
 
 - Dépôt Git : initialisé dans `C:\Users\golda\Documents\ChatGPT\software d'optimisation générale d'inférence`.
 - Branche de fondation : `codex/foundation`.
+- Dépôt distant : `https://github.com/goldaj/inference-companion-lab`, visibilité privée, remote `origin`.
 - Racine des données de laboratoire : `D:\InferenceCompanionLab`.
 - Stade : documentation fondatrice terminée ; spécification expérimentale v0.1 à finaliser avant le premier programme.
-- Aucune dépendance de recherche n’a encore été installée.
+- Aucune dépendance d’inférence ou de mesure n’a encore été installée. GitHub CLI 2.99.0 a été installé pour sauvegarder le dépôt.
 - Aucune donnée utilisateur n’a été supprimée ou modifiée.
 - Aucune modification de système, de firmware, de pilote, de fréquence ou de service n’a été effectuée.
 
