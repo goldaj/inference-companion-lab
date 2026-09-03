@@ -1,0 +1,103 @@
+{
+  "schema_version": "0.1",
+  "captured_on": "2026-09-03",
+  "capture_mode": "read_only_initial_inventory",
+  "host_role": "first_companion_lab_host",
+  "operating_system": {
+    "caption": "Microsoft Windows 10 Famille",
+    "version": "10.0.19045",
+    "architecture": "64-bit"
+  },
+  "computer": {
+    "manufacturer": "MSI",
+    "model": "MS-7998",
+    "motherboard": "Z170A SLI PLUS (MS-7998)",
+    "bios_vendor": "American Megatrends Inc.",
+    "bios_version": "1.60",
+    "bios_date": "2016-05-23"
+  },
+  "cpu": {
+    "name": "Intel Core i5-6600K CPU @ 3.50GHz",
+    "physical_cores": 4,
+    "logical_processors": 4,
+    "address_width_bits": 64,
+    "wmi_max_clock_mhz": 3504,
+    "instruction_sets": "unverified_by_dedicated_probe"
+  },
+  "memory": {
+    "installed_bytes": 17137790976,
+    "modules": 2,
+    "module_capacity_bytes": 8589934592,
+    "configured_speed_mt_s": 2133
+  },
+  "gpu": {
+    "name": "NVIDIA GeForce GTX 1070",
+    "vram_total_mib": 8192,
+    "vram_source": "nvidia-smi",
+    "driver_version": "560.94",
+    "snapshot": {
+      "vram_free_mib": 4290,
+      "performance_state": "P0",
+      "temperature_c": 56,
+      "power_draw_w": 31.77,
+      "power_limit_w": 151.0,
+      "gpu_utilization_percent": 29,
+      "memory_utilization_percent": 7,
+      "is_baseline": false
+    },
+    "known_measurement_issue": "WMI AdapterRAM reported approximately 4 GiB and was rejected for capacity inventory"
+  },
+  "storage": {
+    "devices": [
+      {
+        "model": "Samsung SSD 750 EVO",
+        "nominal_class": "250 GB"
+      },
+      {
+        "model": "WDC WD10EZEX",
+        "nominal_class": "1 TB"
+      }
+    ],
+    "volumes": [
+      {
+        "name": "C:",
+        "filesystem": "NTFS",
+        "size_bytes_approx": 249000000000,
+        "free_bytes": 15025225728,
+        "purpose": "system_and_git_repository"
+      },
+      {
+        "name": "D:",
+        "size_bytes_approx": 999700000000,
+        "free_bytes": 399888130048,
+        "purpose": "large_runtime_lab_artifacts"
+      }
+    ],
+    "pagefile": {
+      "path": "D:\\pagefile.sys",
+      "allocated_mib": 19642,
+      "snapshot_current_usage_mib": 3286,
+      "snapshot_peak_usage_mib": 3602,
+      "is_baseline": false
+    }
+  },
+  "virtualization_observations": {
+    "hypervisor_present": true,
+    "virtualization_firmware_enabled_wmi": false,
+    "interpretation": "unresolved_apparent_contradiction"
+  },
+  "power_scheme_observed": "Performances élevées",
+  "runtime_lab_root": "D:\\InferenceCompanionLab",
+  "mutations_performed_during_inventory": [
+    "created_project_repository_files",
+    "created_dedicated_runtime_lab_directories"
+  ],
+  "system_mutations_not_performed": [
+    "software_installation",
+    "service_change",
+    "driver_change",
+    "firmware_change",
+    "power_setting_change",
+    "user_data_deletion"
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "schema_version": "0.1",
+  "experiment_id": "exp-0001-observer-and-abcd",
+  "status": "template_not_runnable",
+  "hypothesis": "Une politique adaptative prudente augmente les tokens acceptés sur une trace utilisateur fixée sans dépasser le budget de gêne par rapport aux quotas statiques.",
+  "host_descriptor": "../machine/initial-host.json",
+  "model": {
+    "path": "REPLACE_ME_WITH_ABSOLUTE_MODEL_PATH",
+    "sha256": "REPLACE_ME",
+    "format": "REPLACE_ME",
+    "tokenizer_sha256": "REPLACE_ME",
+    "original_is_logically_immutable": true
+  },
+  "engine": {
+    "name": "REPLACE_ME",
+    "version": "REPLACE_ME",
+    "binary_sha256": "REPLACE_ME",
+    "backend": "REPLACE_ME",
+    "build_options": []
+  },
+  "fidelity": {
+    "level": "E1",
+    "oracle_engine": "REPLACE_ME",
+    "deterministic_sampling": true,
+    "seed": 1,
+    "acceptance_rule": "generated_token_sequence_equals_oracle"
+  },
+  "workload": {
+    "prompt_suite": "REPLACE_ME",
+    "prompt_suite_sha256": "REPLACE_ME",
+    "context_lengths": [512, 2048],
+    "generated_tokens_per_request": 256,
+    "batch_sizes": [1],
+    "sampling": {
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "top_k": 0
+    }
+  },
+  "user_trace": {
+    "source": "synthetic_or_explicitly_consented_trace",
+    "path": "REPLACE_ME",
+    "sha256": "REPLACE_ME",
+    "contains_user_content": false
+  },
+  "scenarios": [
+    {
+      "id": "A",
+      "description": "user workload only; no inference"
+    },
+    {
+      "id": "B",
+      "description": "conservative static inference quota"
+    },
+    {
+      "id": "C",
+      "description": "aggressive static inference quota"
+    },
+    {
+      "id": "D",
+      "description": "adaptive policy with pause and hysteresis"
+    }
+  ],
+  "measurement": {
+    "warmup_runs": 2,
+    "measured_repetitions": 10,
+    "randomize_scenario_order": true,
+    "separate_prefill_and_decode": true,
+    "report_observer_overhead": true,
+    "report_steady_state_only_alongside_full_timeline": true
+  },
+  "required_outputs": [
+    "accepted_tokens",
+    "time_to_first_token_ms",
+    "decode_tokens_per_second",
+    "end_to_end_latency_ms",
+    "user_canary_latency_ms",
+    "cpu_utilization",
+    "gpu_utilization",
+    "ram_pressure",
+    "vram_pressure",
+    "storage_io",
+    "temperature",
+    "power_when_available",
+    "pause_latency_ms",
+    "resume_latency_ms",
+    "plan_transition_cost_ms"
+  ],
+  "stop_conditions": [
+    "user_requests_stop",
+    "canary_budget_exceeded",
+    "memory_guard_triggered",
+    "thermal_guard_triggered",
+    "fidelity_check_failed",
+    "unexpected_write_outside_lab_detected"
+  ]
+}

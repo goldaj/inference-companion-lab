@@ -1,0 +1,54 @@
+# Systèmes et éditeurs
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environnements et dépendances locales
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+node_modules/
+
+# Secrets et configuration privée
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Modèles et artefacts volumineux : ils résident dans D:\InferenceCompanionLab
+*.gguf
+*.safetensors
+*.bin
+*.onnx
+*.engine
+*.weights
+*.ckpt
+*.pt
+*.pth
+*.mlmodelc
+
+# Sorties locales ou transitoires du laboratoire dans le dépôt
+lab/local/
+lab/tmp/
+lab/cache/
+lab/logs/
+lab/raw/
+*.trace
+*.etl
+*.dmp
+
+# Résultats volumineux ; les synthèses petites et documentées peuvent être suivies
+lab/results/**/*.csv
+lab/results/**/*.parquet
+lab/results/**/*.sqlite
+lab/results/**/*.db

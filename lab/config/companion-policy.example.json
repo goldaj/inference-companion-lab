@@ -1,0 +1,51 @@
+{
+  "schema_version": "0.1",
+  "policy_id": "companion-safe-default-template",
+  "status": "template_not_runnable",
+  "principle": "user_priority_under_uncertainty",
+  "privilege_level": "L1",
+  "control_intervals_ms": {
+    "fast_safety_loop": 100,
+    "intermediate_plan_loop": 2000,
+    "slow_learning_loop": 60000
+  },
+  "response_order": [
+    "reduce_submission_rate",
+    "reduce_inference_workers",
+    "switch_to_lower_resource_exact_plan",
+    "pause_inference",
+    "release_reclaimable_project_buffers"
+  ],
+  "recovery": {
+    "minimum_stable_period_ms": 5000,
+    "hysteresis_required": true,
+    "ramp_up_step_limit": 1,
+    "prefer_false_idle_over_user_interference": true
+  },
+  "qos": {
+    "calibration_required": true,
+    "maximum_canary_latency_increase_percent": "REPLACE_ME",
+    "maximum_canary_p99_ms": "REPLACE_ME",
+    "maximum_swap_pressure": "REPLACE_ME",
+    "minimum_free_ram_bytes": "REPLACE_ME",
+    "minimum_free_vram_bytes": "REPLACE_ME",
+    "maximum_gpu_temperature_c": "REPLACE_ME",
+    "maximum_cpu_temperature_c": "REPLACE_ME",
+    "maximum_pause_latency_ms": "REPLACE_ME"
+  },
+  "privacy": {
+    "capture_keystrokes": false,
+    "capture_screen_content": false,
+    "capture_document_names": false,
+    "capture_prompt_content_by_default": false,
+    "structural_metrics_only": true
+  },
+  "filesystem": {
+    "allowed_write_roots": [
+      "REPLACE_ME_WITH_ABSOLUTE_GIT_REPOSITORY_PATH",
+      "D:\\InferenceCompanionLab"
+    ],
+    "delete_user_files": false,
+    "quarantine_only_lab_artifacts": true
+  }
+}
