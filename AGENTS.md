@@ -6,9 +6,10 @@ Toute personne ou tout agent travaillant dans ce dépôt doit lire, dans cet ord
 
 1. `PROJECT_STATE.md` ;
 2. `CONTEXT_TRANSFER.md` ;
-3. `docs/RAPPORT_FONDATEUR.md` ;
-4. `docs/CHARTE_RECHERCHE.md` ;
-5. le document spécialisé pertinent pour la tâche.
+3. `docs/GOUVERNANCE_DOCUMENTAIRE.md` ;
+4. `docs/RAPPORT_FONDATEUR.md` ;
+5. `docs/CHARTE_RECHERCHE.md` ;
+6. le document spécialisé pertinent pour la tâche.
 
 ## Invariants non négociables
 
@@ -44,3 +45,21 @@ Toute personne ou tout agent travaillant dans ce dépôt doit lire, dans cet ord
 - Mettre à jour `PROJECT_STATE.md` après chaque jalon ou changement de direction.
 - Un nouveau kernel, langage, noyau OS ou mécanisme privilégié doit répondre à un goulot mesuré, pas seulement à une intuition.
 - Toute nouvelle transformation du modèle doit indiquer son niveau de fidélité E0, E1, E2 ou E3 et fournir sa méthode de vérification.
+
+## Gouvernance documentaire obligatoire
+
+- Git est la source principale de la documentation, du code, des protocoles et des résultats synthétiques.
+- Après chaque tâche significative, appliquer intégralement `docs/GOUVERNANCE_DOCUMENTAIRE.md` dans le même tour de travail.
+- Examiner au minimum `PROJECT_STATE.md` et `docs/JOURNAL_TRAVAUX.md` ; les mettre à jour si la tâche crée une information durable.
+- Mettre à jour `CONTEXT_TRANSFER.md` dès qu’une autre conversation aurait besoin de la nouvelle information pour reprendre correctement.
+- Une information présente seulement dans la conversation n’est pas considérée comme intégrée au projet.
+- Valider les formats, tests, liens, secrets, tailles et le diff avant le commit.
+- Après une tâche significative terminée, créer un commit cohérent, le pousser vers `origin` et vérifier l’égalité des hashes local et distant, sauf demande explicite de rester local ou empêchement documenté.
+- Ne jamais pousser de secret, modèle, trace personnelle, dump ou artefact volumineux, même vers un dépôt privé.
+
+## Utilisation du panel
+
+- `docs/PANEL_PERSONAS.md` définit douze individus synthétiques stables, pas seulement douze métiers.
+- Lorsqu’une persona est convoquée, conserver sa biographie, son tempérament, ses valeurs, ses biais, ses relations et ses limites de compétence.
+- Ne jamais déduire une position technique de son sexe, genre, âge, nationalité, langue, origine sociale, handicap ou autre identité.
+- Les personas organisent la contradiction ; elles ne remplacent ni les sources, ni les mesures, ni les expériences.

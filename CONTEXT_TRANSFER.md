@@ -1,6 +1,6 @@
 # Dossier de transfert vers une autre conversation
 
-Version : 0.1
+Version : 0.2
 Date : 2026-09-03
 Statut : contexte fondateur consolidé
 
@@ -22,6 +22,8 @@ Le modèle original est immuable. Les transformations sont séparées en quatre 
 - niveau 3 : modification réelle du modèle, interdite par défaut et uniquement possible avec consentement explicite.
 
 Le premier jalon ne transforme pas le modèle. Il mesure et contrôle de façon non privilégiée.
+
+Le projet utilise un panel de douze individus synthétiques, et non de simples intitulés professionnels. Chaque membre possède une biographie, une identité, un tempérament, des valeurs, un rapport au risque, des biais, des relations et un style de contradiction stables. Les caractéristiques de sexe ou genre, d’âge, de nationalité, de langue, d’origine sociale, de situation familiale, de handicap ou de neurodivergence enrichissent le vécu fictif mais ne déterminent aucune conclusion technique. Le panel complet et son protocole sont dans `docs/PANEL_PERSONAS.md`.
 
 ## Objectif du mode compagnon
 
@@ -111,6 +113,12 @@ La structure de laboratoire et la documentation fondatrice sont créées et sauv
 
 La prochaine étape est de finaliser la spécification expérimentale v0.1 : choisir le modèle initial, le moteur de référence, la génération déterministe, les contextes, les canaris, le budget de gêne et la durée des traces. Ensuite, construire l’observateur passif.
 
+## Gouvernance documentaire
+
+Git est la source principale de la documentation, du code, des protocoles et des résultats synthétiques. Une décision uniquement conversationnelle reste provisoire. Après chaque tâche significative, la personne ou l’agent responsable doit examiner les documents concernés, mettre à jour `PROJECT_STATE.md` et `docs/JOURNAL_TRAVAUX.md` lorsque nécessaire, valider le diff, créer un commit cohérent, pousser vers `origin` et vérifier que les hashes local et distant correspondent.
+
+Les règles détaillées et la matrice de mise à jour se trouvent dans `docs/GOUVERNANCE_DOCUMENTAIRE.md`. Les modèles, traces et résultats lourds restent hors Git dans `D:\InferenceCompanionLab`, avec provenance représentée par des manifestes et hachages.
+
 ## Prompt de reprise conseillé
 
-> Reprends le projet de superoptimiseur d’inférence intégrale dans le dépôt indiqué. Lis d’abord `AGENTS.md`, `PROJECT_STATE.md`, `CONTEXT_TRANSFER.md` et `docs/RAPPORT_FONDATEUR.md`. Le mode compagnon non destructif est la priorité. Le modèle est imposé et ne doit pas être remplacé. Vérifie l’état Git et les changements existants avant toute édition. Ne commence pas par installer un moteur, transformer le modèle ou demander des privilèges : commence par la prochaine décision encore ouverte dans `PROJECT_STATE.md`, sauf instruction plus récente de l’utilisateur.
+> Reprends le projet de superoptimiseur d’inférence intégrale dans le dépôt indiqué. Lis d’abord `AGENTS.md`, `PROJECT_STATE.md`, `CONTEXT_TRANSFER.md`, `docs/GOUVERNANCE_DOCUMENTAIRE.md` et `docs/RAPPORT_FONDATEUR.md`. Le mode compagnon non destructif est la priorité. Le modèle est imposé et ne doit pas être remplacé. Git est la source documentaire principale. Vérifie l’état Git, le suivi distant et les changements existants avant toute édition. Après toute tâche significative, mets à jour la documentation concernée, valide, commite, pousse et vérifie le hash distant. Ne commence pas par installer un moteur, transformer le modèle ou demander des privilèges : commence par la prochaine décision encore ouverte dans `PROJECT_STATE.md`, sauf instruction plus récente de l’utilisateur.

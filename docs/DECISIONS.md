@@ -98,3 +98,17 @@ Date : 2026-09-03
 Statut : accepté
 
 Le code et les documents sont sauvegardés dans le dépôt GitHub privé `goldaj/inference-companion-lab`. Les modèles, traces, runs et résultats volumineux restent hors Git dans `D:\InferenceCompanionLab`. Cette séparation évite de publier des modèles, des données personnelles ou des artefacts volumineux et signifie qu’une sauvegarde indépendante du laboratoire de données devra être organisée séparément si nécessaire.
+
+## ADR-014 — Git comme source documentaire principale
+
+Date : 2026-09-03
+Statut : accepté
+
+Une décision uniquement présente dans une conversation reste provisoire. Après chaque tâche significative, les documents concernés sont réconciliés avec le résultat réel, validés, commités, poussés vers `origin` et comparés à la branche distante. `docs/GOUVERNANCE_DOCUMENTAIRE.md` définit les critères, exceptions et documents à examiner.
+
+## ADR-015 — Le panel est composé d’individus synthétiques stables
+
+Date : 2026-09-03
+Statut : accepté
+
+Les douze fonctions du panel sont incarnées par douze individus fictifs possédant identité, biographie, tempérament, valeurs, biais et relations durables. Leurs caractéristiques démographiques enrichissent les vécus sans déterminer aucune position technique. Les personas structurent la contradiction mais ne remplacent ni expertise vérifiée, ni source, ni mesure.

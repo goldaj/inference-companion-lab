@@ -1,6 +1,6 @@
 # Rapport fondateur — Superoptimiseur d’inférence intégrale
 
-Version : 0.1
+Version : 0.2
 Date : 2026-09-03
 Langue de référence : français
 Statut : document de fondation, destiné à être transmis et exporté
@@ -877,24 +877,40 @@ Les détails sont dans `docs/SURETE.md`.
 
 ## 16. Panel de personas requis
 
-Le projet doit maintenir des rôles contradictoires :
+Le panel ne se réduit plus à une liste de métiers. Il comprend douze individus synthétiques stables :
 
-- directeur de recherche et intégrateur ;
-- architecte systèmes/runtime ;
-- spécialiste compilateurs et IR ;
-- spécialiste kernels CPU/GPU ;
-- architecte matériel et mémoire ;
-- spécialiste numérique et fidélité des modèles ;
-- spécialiste contrôle, QoS et thermique ;
-- expérimentaliste et reproductibilité ;
-- sécurité, privilèges et récupération ;
-- théoricien des limites ;
-- falsificateur/red team scientifique ;
-- représentant de l’utilisateur du poste.
+- Dr Élise Moreau — direction de recherche et intégration ;
+- Chinedu Okafor — runtime et systèmes d’exploitation ;
+- Hanae Mori — compilateurs, graphes et IR ;
+- Valentina Rojas — kernels CPU/GPU ;
+- Lars Nyström — microarchitecture, mémoire, énergie et thermique ;
+- Dr Ananya Iyer — fidélité numérique et sémantique du modèle ;
+- Prof. Nadia El-Masri — contrôle en ligne et QoS ;
+- Dr Kwame Mensah — expérimentation et métrologie ;
+- Marta Kowalska — sûreté, sécurité et récupération ;
+- Prof. Rafael Soria — limites physiques et algorithmiques ;
+- Noor Al-Khatib — falsification contradictoire ;
+- Joana Pereira — utilisateur, accessibilité, vie privée et valeur produit.
+
+Chaque personne possède un âge, un sexe ou genre, des pronoms, une nationalité, des langues, une origine sociale, une situation personnelle, une formation, une trajectoire, un tempérament, des valeurs, un rapport au risque, des sensibilités, des angles morts, des relations internes et une instruction d’incarnation.
+
+Ces caractéristiques rendent les raisonnements plus variés, mais ne possèdent aucune valeur de preuve. Le panel interdit de déduire une opinion technique d’un sexe, d’une nationalité, d’un âge, d’un handicap ou d’une autre identité. Les positions viennent des expériences biographiques écrites et doivent encore être défendues par des mécanismes et des mesures.
 
 Un gain de performance ne doit pas être validé uniquement par la personne qui l’a proposé. Toute action privilégiée nécessite l’avis sécurité. Toute transformation du modèle nécessite l’avis fidélité. Toute invention d’un nouveau kernel, langage ou OS nécessite une preuve par profilage et une analyse d’Amdahl.
 
-Les mandats complets et prompts réutilisables sont dans `docs/PANEL_PERSONAS.md`.
+Les biographies complètes, tensions, droits d’arrêt, quorums et prompts réutilisables sont dans `docs/PANEL_PERSONAS.md`.
+
+---
+
+## 16 bis. Gouvernance documentaire
+
+Git est la source principale de la documentation, du code, des protocoles et des résultats synthétiques. Une décision seulement exprimée dans une conversation reste provisoire.
+
+Après chaque tâche significative, le responsable doit réconcilier les documents avec le résultat réel, mettre à jour l’état et le journal des travaux, valider les formats et le diff, créer un commit cohérent, le pousser vers le dépôt GitHub privé et vérifier l’égalité des hashes local et distant. Les exceptions doivent être explicites et documentées.
+
+Les modèles et données lourdes restent dans `D:\InferenceCompanionLab`. Git en conserve la provenance par manifestes, hachages et identifiants, mais ne constitue pas encore une sauvegarde de ces objets.
+
+La définition complète d’une tâche significative, la matrice de documents et le protocole de validation se trouvent dans `docs/GOUVERNANCE_DOCUMENTAIRE.md`.
 
 ---
 

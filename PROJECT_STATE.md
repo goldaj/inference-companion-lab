@@ -8,7 +8,9 @@ Dernière mise à jour : 2026-09-03
 - Branche de fondation : `codex/foundation`.
 - Dépôt distant : `https://github.com/goldaj/inference-companion-lab`, visibilité privée, remote `origin`.
 - Racine des données de laboratoire : `D:\InferenceCompanionLab`.
-- Stade : documentation fondatrice terminée ; spécification expérimentale v0.1 à finaliser avant le premier programme.
+- Stade : documentation fondatrice, gouvernance documentaire et panel individuel terminés ; spécification expérimentale v0.1 à finaliser avant le premier programme.
+- Source documentaire principale : Git ; toute tâche significative se termine par mise à jour documentaire, validation, commit, push et vérification du hash distant.
+- Panel : douze individus synthétiques complets décrits dans `docs/PANEL_PERSONAS.md` version 2.0.
 - Aucune dépendance d’inférence ou de mesure n’a encore été installée. GitHub CLI 2.99.0 a été installé pour sauvegarder le dépôt.
 - Aucune donnée utilisateur n’a été supprimée ou modifiée.
 - Aucune modification de système, de firmware, de pilote, de fréquence ou de service n’a été effectuée.
@@ -25,6 +27,8 @@ Dernière mise à jour : 2026-09-03
 8. Le premier contrat de fidélité recommandé est E1 : mêmes tokens qu’une référence déterministe.
 9. Le premier système mesure avant d’optimiser.
 10. Les données lourdes sont séparées du dépôt Git.
+11. Git et le dépôt GitHub privé constituent la source principale des documents et du code.
+12. Les douze membres du panel possèdent une identité et une personnalité stables ; leurs caractéristiques démographiques n’ont aucune valeur de preuve technique.
 
 ## Premier poste de laboratoire
 

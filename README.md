@@ -26,7 +26,15 @@ Consulter [PROJECT_STATE.md](PROJECT_STATE.md) pour l’état opérationnel exac
 - [Panel de personas](docs/PANEL_PERSONAS.md) — rôles contradictoires à mobiliser pendant la recherche.
 - [Sûreté et réversibilité](docs/SURETE.md) — limites d’autorité, protections et récupération.
 - [Décisions](docs/DECISIONS.md) — décisions architecturales déjà prises.
+- [Gouvernance documentaire](docs/GOUVERNANCE_DOCUMENTAIRE.md) — source de vérité, critères d’une tâche significative, validation, commit et push.
+- [Journal des travaux](docs/JOURNAL_TRAVAUX.md) — chronologie humaine des jalons, complétée par l’historique Git.
 - [Transfert de contexte](CONTEXT_TRANSFER.md) — résumé autonome destiné à une autre conversation.
+
+## Source de vérité
+
+Git est la source principale de la documentation, du code, des protocoles et des résultats synthétiques. Après chaque tâche significative, les documents concernés doivent être mis à jour dans le même travail, validés, commités, poussés vers le dépôt GitHub privé et comparés à la branche distante.
+
+Une décision exprimée uniquement dans une conversation reste provisoire tant qu’elle n’est pas intégrée au dépôt. Les données lourdes de `D:\InferenceCompanionLab` restent hors Git ; elles sont reliées aux documents par des manifestes, versions, identifiants et hachages.
 
 ## Structure du laboratoire
 
