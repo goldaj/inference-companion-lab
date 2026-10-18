@@ -95,7 +95,7 @@ La première démonstration compare sans inférence, statique conservateur, stat
 ## ADR-013 — Dépôt GitHub privé et données lourdes séparées
 
 Date : 2026-09-03
-Statut : accepté
+Statut : accepté ; visibilité remplacée par ADR-016 le 2026-10-18, séparation des données maintenue
 
 Le code et les documents sont sauvegardés dans le dépôt GitHub privé `goldaj/inference-companion-lab`. Les modèles, traces, runs et résultats volumineux restent hors Git dans `D:\InferenceCompanionLab`. Cette séparation évite de publier des modèles, des données personnelles ou des artefacts volumineux et signifie qu’une sauvegarde indépendante du laboratoire de données devra être organisée séparément si nécessaire.
 
@@ -112,3 +112,14 @@ Date : 2026-09-03
 Statut : accepté
 
 Les douze fonctions du panel sont incarnées par douze individus fictifs possédant identité, biographie, tempérament, valeurs, biais et relations durables. Leurs caractéristiques démographiques enrichissent les vécus sans déterminer aucune position technique. Les personas structurent la contradiction mais ne remplacent ni expertise vérifiée, ni source, ni mesure.
+
+## ADR-016 — Publication de la fondation de recherche dans le portfolio
+
+Date : 2026-10-18
+Statut : accepté
+
+Le propriétaire souhaite montrer aussi ses recherches, réflexions et projets inaboutis dans son portfolio GitHub. Le dépôt documentaire `goldaj/inference-companion-lab` devient public après revue des fichiers, de l’historique accessible et des métadonnées de machine, commit, push et contrôle des hashes.
+
+La revue Gitleaks n’a détecté aucun secret dans les fichiers ni dans les références Git examinées. Le profil d’hôte contient des caractéristiques matérielles génériques et pas de numéro de série ni d’identifiant unique ; les personnages du panel sont fictifs. Cette vérification ne constitue pas une preuve mathématique d’absence de toute information sensible.
+
+Cette décision remplace uniquement la visibilité privée adoptée dans ADR-013. Les modèles, données personnelles, traces brutes et artefacts lourds restent locaux et interdits dans Git. L’historique de la sauvegarde privée initiale est conservé. Aucune promesse de performance, expérience supplémentaire ou implémentation n’est ajoutée par cette publication.

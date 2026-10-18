@@ -9,7 +9,7 @@ Le mode compagnon utilise seulement la marge de ressources que le poste peut pr�
 - Phase : fondation scientifique et préparation du laboratoire.
 - Mode retenu : compagnon non privilégié et non destructif.
 - Premier poste : Windows 10, Intel Core i5-6600K, 16 Gio de RAM, NVIDIA GeForce GTX 1070 8 Gio.
-- Sauvegarde distante : dépôt GitHub privé `goldaj/inference-companion-lab`.
+- Source distante publique (publication autorisée le 2026-10-18) : dépôt GitHub `goldaj/inference-companion-lab`.
 - Modèle de départ : pas encore choisi.
 - Moteur de référence : pas encore choisi.
 - Logiciels ajoutés au poste : GitHub CLI 2.99.0, uniquement pour l’authentification et la publication du dépôt.
@@ -32,7 +32,7 @@ Consulter [PROJECT_STATE.md](PROJECT_STATE.md) pour l’état opérationnel exac
 
 ## Source de vérité
 
-Git est la source principale de la documentation, du code, des protocoles et des résultats synthétiques. Après chaque tâche significative, les documents concernés doivent être mis à jour dans le même travail, validés, commités, poussés vers le dépôt GitHub privé et comparés à la branche distante.
+Git est la source principale de la documentation, du code, des protocoles et des résultats synthétiques. Après chaque tâche significative, les documents concernés doivent être mis à jour dans le même travail, validés, commités, poussés vers le dépôt GitHub public et comparés à la branche distante.
 
 Une décision exprimée uniquement dans une conversation reste provisoire tant qu’elle n’est pas intégrée au dépôt. Les données lourdes de `D:\InferenceCompanionLab` restent hors Git ; elles sont reliées aux documents par des manifestes, versions, identifiants et hachages.
 

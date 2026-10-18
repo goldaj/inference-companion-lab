@@ -45,3 +45,15 @@ Ce journal donne une vue humaine des jalons. Git demeure la preuve détaillée d
 - interdiction de déduire une position technique d’un sexe, d’une nationalité, d’un âge ou d’une autre identité.
 
 **Prochaine action scientifique inchangée :** compléter la spécification expérimentale v0.1, puis construire l’observateur passif.
+
+## 2026-10-18 — Préparation et publication documentaire pour le portfolio
+
+**Demande :** rendre visibles les recherches et projets même inaboutis, après contrôle des informations privées et sans écraser un dépôt existant.
+
+**Résultat préparé :** revue des 25 fichiers suivis et des références Git ; aucune détection Gitleaks, aucun numéro de série, adresse réseau ou identifiant unique de machine relevé dans la revue complémentaire. Le profil matériel générique est conservé pour la reproductibilité ; les personas restent explicitement synthétiques.
+
+**Décision :** ADR-016 autorise la visibilité publique du dépôt existant. L’état, le transfert de contexte et les références courantes sont réconciliés ; les mentions de la création privée initiale restent historiques. La visibilité est appliquée après le push et la vérification des hashes de ce jalon.
+
+**Validation :** JSON et liens Markdown locaux vérifiés, diff inspecté, contrôle des secrets et tailles exécuté avant commit. Aucun modèle, moteur, expérience d’inférence, service ou réglage du poste n’a été installé ou exécuté pour ce jalon.
+
+**Prochaine action scientifique inchangée :** finaliser la spécification expérimentale v0.1, puis réaliser l’observateur passif.

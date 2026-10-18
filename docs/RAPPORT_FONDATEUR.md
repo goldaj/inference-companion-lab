@@ -906,7 +906,7 @@ Les biographies complètes, tensions, droits d’arrêt, quorums et prompts réu
 
 Git est la source principale de la documentation, du code, des protocoles et des résultats synthétiques. Une décision seulement exprimée dans une conversation reste provisoire.
 
-Après chaque tâche significative, le responsable doit réconcilier les documents avec le résultat réel, mettre à jour l’état et le journal des travaux, valider les formats et le diff, créer un commit cohérent, le pousser vers le dépôt GitHub privé et vérifier l’égalité des hashes local et distant. Les exceptions doivent être explicites et documentées.
+Après chaque tâche significative, le responsable doit réconcilier les documents avec le résultat réel, mettre à jour l’état et le journal des travaux, valider les formats et le diff, créer un commit cohérent, le pousser vers le dépôt GitHub de référence (public depuis la décision ADR-016 du 2026-10-18) et vérifier l’égalité des hashes local et distant. Les exceptions doivent être explicites et documentées.
 
 Les modèles et données lourdes restent dans `D:\InferenceCompanionLab`. Git en conserve la provenance par manifestes, hachages et identifiants, mais ne constitue pas encore une sauvegarde de ces objets.
 

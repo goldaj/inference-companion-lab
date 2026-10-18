@@ -11,7 +11,7 @@ La documentation versionnée dans Git constitue la source principale et durable 
 Références actuelles :
 
 - dépôt local : `C:\Users\golda\Documents\ChatGPT\software d'optimisation générale d'inférence` ;
-- dépôt GitHub privé : `https://github.com/goldaj/inference-companion-lab` ;
+- dépôt GitHub public (décision ADR-016 du 2026-10-18) : `https://github.com/goldaj/inference-companion-lab` ;
 - remote : `origin` ;
 - branche de travail et branche par défaut actuelle : `codex/foundation`.
 

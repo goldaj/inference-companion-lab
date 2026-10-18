@@ -1,12 +1,12 @@
 # État vivant du projet
 
-Dernière mise à jour : 2026-09-03
+Dernière mise à jour : 2026-10-18
 
 ## Statut
 
 - Dépôt Git : initialisé dans `C:\Users\golda\Documents\ChatGPT\software d'optimisation générale d'inférence`.
 - Branche de fondation : `codex/foundation`.
-- Dépôt distant : `https://github.com/goldaj/inference-companion-lab`, visibilité privée, remote `origin`.
+- Dépôt distant : `https://github.com/goldaj/inference-companion-lab`, visibilité publique (décision du 2026-10-18), remote `origin`.
 - Racine des données de laboratoire : `D:\InferenceCompanionLab`.
 - Stade : documentation fondatrice, gouvernance documentaire et panel individuel terminés ; spécification expérimentale v0.1 à finaliser avant le premier programme.
 - Source documentaire principale : Git ; toute tâche significative se termine par mise à jour documentaire, validation, commit, push et vérification du hash distant.
@@ -27,7 +27,7 @@ Dernière mise à jour : 2026-09-03
 8. Le premier contrat de fidélité recommandé est E1 : mêmes tokens qu’une référence déterministe.
 9. Le premier système mesure avant d’optimiser.
 10. Les données lourdes sont séparées du dépôt Git.
-11. Git et le dépôt GitHub privé constituent la source principale des documents et du code.
+11. Git et le dépôt GitHub public constituent la source principale des documents et du code.
 12. Les douze membres du panel possèdent une identité et une personnalité stables ; leurs caractéristiques démographiques n’ont aucune valeur de preuve technique.
 
 ## Premier poste de laboratoire
@@ -78,3 +78,9 @@ Ensuite seulement : écrire l’observateur passif et établir les scénarios A/
 La conversation suivante ne doit pas repartir d’une recommandation de petit modèle ou d’un simple outil local existant. Elle doit reprendre au niveau d’un programme de R&D général, tout en conservant le périmètre expérimental étroit du premier jalon.
 
 Lire `CONTEXT_TRANSFER.md` avant toute action.
+
+## Publication pour le portfolio — 2026-10-18
+
+Le propriétaire autorise la publication de cette recherche documentaire. La revue des fichiers et de toutes les références Git n’a détecté aucun secret avec Gitleaks ; la revue complémentaire n’a relevé ni adresse réseau privée, ni numéro de série, ni identifiant unique de machine. Le profil matériel décrit des caractéristiques génériques utiles à la reproductibilité. Les biographies du panel sont explicitement fictives.
+
+Le dépôt est présenté comme une fondation de recherche : aucune mesure de gain, expérience d’inférence ou implémentation de moteur n’a été ajoutée. Les modèles, traces et données personnelles restent hors Git dans le laboratoire local. La bascule de visibilité GitHub suit le push et la vérification des hashes de ce jalon. La prochaine étape scientifique reste la spécification expérimentale v0.1.

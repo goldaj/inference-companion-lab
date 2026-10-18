@@ -1,8 +1,8 @@
 # Dossier de transfert vers une autre conversation
 
-Version : 0.2
-Date : 2026-09-03
-Statut : contexte fondateur consolidé
+Version : 0.3
+Date : 2026-10-18
+Statut : contexte fondateur consolidé, publication documentaire autorisée
 
 ## Résumé autonome
 
@@ -95,7 +95,7 @@ Le contrat recommandé pour le premier prototype est E1.
 
 - Dépôt Git : `C:\Users\golda\Documents\ChatGPT\software d'optimisation générale d'inférence`
 - Branche : `codex/foundation`
-- Dépôt GitHub privé : `https://github.com/goldaj/inference-companion-lab`
+- Dépôt GitHub public (décision du 2026-10-18) : `https://github.com/goldaj/inference-companion-lab`
 - Remote : `origin`
 - Laboratoire de données : `D:\InferenceCompanionLab`
 - Modèles originaux : `D:\InferenceCompanionLab\models`
@@ -109,7 +109,7 @@ Le contrat recommandé pour le premier prototype est E1.
 
 ## État exact et prochaine étape
 
-La structure de laboratoire et la documentation fondatrice sont créées et sauvegardées dans un dépôt GitHub privé. Il n’existe pas encore de moteur propre au projet. Aucune dépendance d’inférence n’a été installée. La seule installation ajoutée est GitHub CLI 2.99.0 ; aucune configuration matérielle, aucun service, pilote ou firmware n’a été modifié.
+La structure de laboratoire et la documentation fondatrice ont été initialement sauvegardées dans un dépôt GitHub privé ; la visibilité publique est autorisée le 2026-10-18 pour présenter le travail de recherche dans le portfolio après audit des fichiers et de l’historique. Il n’existe pas encore de moteur propre au projet. Aucune dépendance d’inférence n’a été installée. La seule installation ajoutée est GitHub CLI 2.99.0 ; aucune configuration matérielle, aucun service, pilote ou firmware n’a été modifié.
 
 La prochaine étape est de finaliser la spécification expérimentale v0.1 : choisir le modèle initial, le moteur de référence, la génération déterministe, les contextes, les canaris, le budget de gêne et la durée des traces. Ensuite, construire l’observateur passif.
 
