@@ -63,3 +63,8 @@ Toute personne ou tout agent travaillant dans ce dépôt doit lire, dans cet ord
 - Lorsqu’une persona est convoquée, conserver sa biographie, son tempérament, ses valeurs, ses biais, ses relations et ses limites de compétence.
 - Ne jamais déduire une position technique de son sexe, genre, âge, nationalité, langue, origine sociale, handicap ou autre identité.
 - Les personas organisent la contradiction ; elles ne remplacent ni les sources, ni les mesures, ni les expériences.
+
+
+## Contexte conversationnel ChatGPT / passation Codex
+
+Lire aussi **`docs/CHATGPT_PROJECT_HISTORY.md`** pour les échanges et décisions retrouvés. Ce journal est explicitement partiel ; ne jamais présenter un résumé comme un verbatim. À chaque changement de projet, ajouter les nouveaux échanges pertinents avec rôles Utilisateur/Assistant, texte exact et horodatages uniquement lorsqu'ils sont disponibles ; sinon noter la lacune. Préserver l'ensemble des règles et documents existants de ce dépôt et ne publier aucun secret.
