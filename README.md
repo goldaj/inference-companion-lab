@@ -19,6 +19,7 @@ Consulter [PROJECT_STATE.md](PROJECT_STATE.md) pour l’état opérationnel exac
 
 ## Documents essentiels
 
+- [Protocole expérimental candidat du 25 octobre 2026](docs/PROTOCOLE_EXPERIMENTAL_CANDIDAT_20261025.md) — hypothèses H0/H1, effet observateur A0/A1, comparatif A/B/C/D, conditions d'invalidation. **Aucune mesure ni modèle choisi.**
 - [Rapport fondateur](docs/RAPPORT_FONDATEUR.md) — contexte complet, objectifs, limites, architecture, alertes et plan.
 - [Charte de recherche](docs/CHARTE_RECHERCHE.md) — invariants, fidélité, preuve et règles de mesure.
 - [Mode compagnon](docs/MODE_COMPAGNON.md) — définition du slack, qualité de service, contrôle et migration.
