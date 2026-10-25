@@ -84,3 +84,16 @@ Lire `CONTEXT_TRANSFER.md` avant toute action.
 Le propriétaire autorise la publication de cette recherche documentaire. La revue des fichiers et de toutes les références Git n’a détecté aucun secret avec Gitleaks ; la revue complémentaire n’a relevé ni adresse réseau privée, ni numéro de série, ni identifiant unique de machine. Le profil matériel décrit des caractéristiques génériques utiles à la reproductibilité. Les biographies du panel sont explicitement fictives.
 
 Le dépôt est présenté comme une fondation de recherche : aucune mesure de gain, expérience d’inférence ou implémentation de moteur n’a été ajoutée. Les modèles, traces et données personnelles restent hors Git dans le laboratoire local. La bascule de visibilité GitHub suit le push et la vérification des hashes de ce jalon. La prochaine étape scientifique reste la spécification expérimentale v0.1.
+
+## Revue indépendante candidate (2026-10-25, branche non fusionnée)
+
+- Sur `chatgpt/research-review-20261025`, un protocole falsifiable
+  `docs/PROTOCOLE_EXPERIMENTAL_CANDIDAT_20261025.md` distingue
+  surcharge de l'observateur A0/A1, calibration, essais A/B/C/D appariés,
+  effet thermique, tests de sûreté et réserves de validité externe.
+- **Aucune décision de modèle, moteur, budget QoS ou durée n'est prise** ;
+  aucune donnée collectée ni logiciel installé. Ce travail n'avance pas
+  la phase 0 à « terminée » et ne démarre pas l'observateur.
+- Revue Codex requise avant adoption ou gel du protocole ; les questions
+  ouvertes initiales restent d'actualité. Ne pas réécrire le statut
+  historique de la branche fondatrice sans fusion volontaire.
