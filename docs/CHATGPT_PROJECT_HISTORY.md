@@ -16,3 +16,14 @@ Lire en premier PROJECT_STATE.md, CONTEXT_TRANSFER.md, docs/GOUVERNANCE_DOCUMENT
 
 ## Restant à intégrer
 Les conversations complètes, toutes les réponses exactes de l'assistant et les horodatages manquants nécessitent un export authentique. Quand il est disponible, ajouter les messages dans l'ordre en distinguant Utilisateur (verbatim), Assistant (verbatim) et résumé reconstruit. Examiner d'abord la confidentialité. Ne jamais modifier les anciens documents de contexte sans nécessité.
+
+## 2026-10-25 — Incubator, reprise par la méthode expérimentale
+
+**Utilisateur (verbatim, heure non disponible)** :
+> Est-ce que dans le pool de projets dans mon repo projects-incubator tu verrais des choses sur lesquelles avancer ? Prends en priorité ceux qui ont le plus de matière déjà aujourd'hui. Puis ensuite même consigne qu'avec tout le reste. D'ailleurs si jamais tu arrives à avancer assez pour en faire de vrais projets, tu peux me le dire, je te créerais un repo dédié au nom que tu veux et on fera tout ça sur un vrai repo de projet en le sortant de l'incubator. Analyse bien avant de te lancer dans quoique ce soit. Là il faudra que tu regardes plus ces sujets comme un chercheur qu'un ingénieur, à mon avis (à confirmer).
+
+**Assistant (résumé reconstruit, non verbatim)** : le dépôt disposant
+déjà de son propre Git et d'une charte scientifique, rédaction en
+branche distincte d'un protocole d'expérimentation A0/A1 et A/B/C/D.
+Pas de code exécuté, aucune sélection arbitraire du modèle imposé,
+aucune modification matérielle, protocole **non adopté**.
