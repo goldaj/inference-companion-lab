@@ -57,3 +57,16 @@ Ce journal donne une vue humaine des jalons. Git demeure la preuve détaillée d
 **Validation :** JSON et liens Markdown locaux vérifiés, diff inspecté, contrôle des secrets et tailles exécuté avant commit. Aucun modèle, moteur, expérience d’inférence, service ou réglage du poste n’a été installé ou exécuté pour ce jalon.
 
 **Prochaine action scientifique inchangée :** finaliser la spécification expérimentale v0.1, puis réaliser l’observateur passif.
+
+## 2026-10-25 — Revue scientifique parallèle (candidat)
+
+**Résultat préparé en branche isolée** : note d'expérimentation falsifiable
+pour A0/A1 et A/B/C/D, avec risques de biais de mesure, dépendance
+thermique, contraintes E1 et budget de gêne non encore calibré.
+
+**Ce qui n'a pas été fait** : choix du modèle et du moteur, écriture du
+premier observateur, installation sur le poste, mesure des canaris,
+usage de données privées ou résultat expérimental. Aucun gain annoncé.
+
+**Suite** : revue Codex/humaine, résolution des paramètres bloquants
+dans `PROJECT_STATE.md`, puis gel d'un plan exécutable avant mesure.
