@@ -122,3 +122,13 @@ Les règles détaillées et la matrice de mise à jour se trouvent dans `docs/GO
 ## Prompt de reprise conseillé
 
 > Reprends le projet de superoptimiseur d’inférence intégrale dans le dépôt indiqué. Lis d’abord `AGENTS.md`, `PROJECT_STATE.md`, `CONTEXT_TRANSFER.md`, `docs/GOUVERNANCE_DOCUMENTAIRE.md` et `docs/RAPPORT_FONDATEUR.md`. Le mode compagnon non destructif est la priorité. Le modèle est imposé et ne doit pas être remplacé. Git est la source documentaire principale. Vérifie l’état Git, le suivi distant et les changements existants avant toute édition. Après toute tâche significative, mets à jour la documentation concernée, valide, commite, pousse et vérifie le hash distant. Ne commence pas par installer un moteur, transformer le modèle ou demander des privilèges : commence par la prochaine décision encore ouverte dans `PROJECT_STATE.md`, sauf instruction plus récente de l’utilisateur.
+
+## Addendum de recherche, 25 octobre 2026 (proposition non fusionnée)
+
+Branche indépendante `chatgpt/research-review-20261025` : la note
+`docs/PROTOCOLE_EXPERIMENTAL_CANDIDAT_20261025.md` propose d'établir
+le coût de l'observateur (A0/A1) avant d'utiliser l'inférence, puis de
+comparer A/B/C/D à protocole/trace/thermique contrôlés. Elle fournit
+critères de falsification et d'arrêt, et distingue indices de charge et
+absence réelle de gêne. Aucun modèle, aucune mesure et aucune décision
+permanente. À relire avant de choisir les paramètres du premier run.
