@@ -132,3 +132,8 @@ comparer A/B/C/D à protocole/trace/thermique contrôlés. Elle fournit
 critères de falsification et d'arrêt, et distingue indices de charge et
 absence réelle de gêne. Aucun modèle, aucune mesure et aucune décision
 permanente. À relire avant de choisir les paramètres du premier run.
+
+
+## Addendum 27/10/2026 — outillage de contrôle hors ligne pour Codex, PR #2
+
+Contribution autonome sur `chatgpt/trial-audit-gate-20261027` → `chatgpt/research-review-20261025` : `lab/scripts/audit_experiment.py` vérifie la cohérence déclarée des données agrégées A0/A1 et A/B/C/D : hash modèle/moteur/tokenizer/trace/prompt, seed, fenêtre, E1, stop, QoS, gain, paires et effectifs. Il refuse les valeurs synthétiques comme preuves et déclare `REVIEW_REQUIRED` pour les entrées admissibles à une revue humaine, sans jamais certifier une expérience. Lire `docs/AUDIT_EXPERIENCES_HORS_LIGNE_20261027.md` et PR https://github.com/goldaj/inference-companion-lab/pull/2 ; cette note ne remplace pas la fondation et n'autorise aucun transfert de données ou installation. Les paramètres de modèle/moteur/budget demeurent non choisis.
