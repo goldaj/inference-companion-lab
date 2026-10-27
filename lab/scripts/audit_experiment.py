@@ -52,7 +52,13 @@ def _keys(obj: Any, expected: frozenset[str], context: str) -> dict[str, Any]:
 
 
 def _numeric(value: Any, where: str, *, low: float = 0, strictly: bool = False) -> float:
-    if type(value) not in (float, int) or not math.isfinite(value):
+    if type(value) not in (float, int):
+        raise InvalidStudy(f"{where}: finite numeric value required")
+    try:
+        finite = math.isfinite(value)
+    except OverflowError:
+        finite = False  # Python integer too large even to convert to float
+    if not finite:
         raise InvalidStudy(f"{where}: finite numeric value required")
     if value < low or (strictly and value == low):
         raise InvalidStudy(f"{where}: outside admissible range")
