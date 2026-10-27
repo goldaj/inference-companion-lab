@@ -70,3 +70,12 @@ usage de données privées ou résultat expérimental. Aucun gain annoncé.
 
 **Suite** : revue Codex/humaine, résolution des paramètres bloquants
 dans `PROJECT_STATE.md`, puis gel d'un plan exécutable avant mesure.
+
+
+## 2026-10-27 — Porte d'audit méthodologique en branche indépendante
+
+**Demande générale de l'utilisateur (résumé)** : faire progresser un autre projet GitHub uniquement en apportant une plus-value pour une reprise Codex. Jade est un projet important et autorisé sous précautions ; absence de modification ici liée à son état de refonte sensible, pas à une interdiction.
+
+**Livré en PR #2 brouillon, sous réserve de la CI et revue :** code pure Python `lab/scripts/audit_experiment.py`, tests unitaires adversariaux, entrée entièrement synthétique et workflow Github ; documentation détaillée `docs/AUDIT_EXPERIENCES_HORS_LIGNE_20261027.md`. Le modèle/moteur/charge utilisateur ne sont pas fixés ; protocole préalable toujours candidat. Aucun benchmark, aucun gain, aucun changement système, aucune modification de données réelles. La décision émise par l'outil ne peut jamais être un PASS scientifique. N'a pas modifié `codex/foundation` ni le poste Windows.
+
+**Suivant Codex :** examiner le diff et la CI de la PR #2, puis choisir les canaris/référence/budget avec le propriétaire avant toute expérience A0/A1 réelle.
