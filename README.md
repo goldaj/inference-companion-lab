@@ -1,3 +1,5 @@
+> **Contribution GPT6 du 27/10/2026 (PR #2, branche non fusionnée)** : outil d'audit hors ligne de résultats agrégés A0/A1 et A/B/C/D. Documentation dans [AUDIT_EXPERIENCES_HORS_LIGNE_20261027.md](docs/AUDIT_EXPERIENCES_HORS_LIGNE_20261027.md) et tests dans `tests/test_audit_experiment.py`. **Ce n'est pas un moteur d'inférence ni la validation scientifique du protocole**. Les valeurs de démonstration sont synthétiques et rejetées comme preuve. Le corps du README ci-dessous décrit toujours le programme fondateur.
+
 # Laboratoire du superoptimiseur d’inférence intégrale
 
 Ce dépôt contient la documentation, les protocoles et, à terme, le code d’un système logiciel destiné à maximiser l’inférence d’un **modèle imposé** sur une **machine imposée**, en commençant par un mode compagnon non destructif.
