@@ -137,6 +137,12 @@ class AuditExperimentTests(unittest.TestCase):
         with self.assertRaises(InvalidStudy):
             audit_study(p)
 
+    def test_extreme_json_integer_fails_without_overflow_crash(self):
+        p = study()
+        p["protocol"]["max_canary_p99_ms"] = 10 ** 1000
+        with self.assertRaisesRegex(InvalidStudy, "finite numeric"):
+            audit_study(p)
+
     def test_invalid_hash_or_missing_evidence_fails_closed(self):
         p = study()
         p["runs"][3]["trace_sha256"] = "NOT-A-HASH"
