@@ -97,3 +97,11 @@ Le dépôt est présenté comme une fondation de recherche : aucune mesure de ga
 - Revue Codex requise avant adoption ou gel du protocole ; les questions
   ouvertes initiales restent d'actualité. Ne pas réécrire le statut
   historique de la branche fondatrice sans fusion volontaire.
+
+
+## Contribution isolée du 27/10/2026, NON assimilée sur la branche fondatrice
+
+- PR #2 : https://github.com/goldaj/inference-companion-lab/pull/2 ; branche `chatgpt/trial-audit-gate-20261027` dérivée de `chatgpt/research-review-20261025` (protocole candidat PR #1). Cette section n'attribue **aucune livraison à `codex/foundation`**.
+- Nouvel auditeur local de métadonnées d'expériences (`lab/scripts/audit_experiment.py`), tests adversariaux, fixture synthétique et workflow CI ; contexte et limites dans `docs/AUDIT_EXPERIENCES_HORS_LIGNE_20261027.md`.
+- Aucun modèle/moteur/tokenizer choisi, aucun benchmark ni canari réel réalisé, aucune installation sur le poste, aucune modification D: ni privilège. Le besoin de calibrer QoS et de choisir la référence E1 **reste bloquant**.
+- Le validateur ne certifie pas la vérité des déclarations ou leur significativité statistique, et n'émet jamais un succès de recherche ; revue Codex nécessaire après vérification des tests de cette branche.
