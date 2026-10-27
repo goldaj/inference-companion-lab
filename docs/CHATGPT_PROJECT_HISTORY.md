@@ -27,3 +27,14 @@ déjà de son propre Git et d'une charte scientifique, rédaction en
 branche distincte d'un protocole d'expérimentation A0/A1 et A/B/C/D.
 Pas de code exécuté, aucune sélection arbitraire du modèle imposé,
 aucune modification matérielle, protocole **non adopté**.
+
+
+## 2026-10-27 — Nouveau projet GitHub pour une avance utile avant Codex
+
+**Utilisateur (verbatim exact dans la conversation présente)** :
+> Un autre projet de mon GitHub sur lequel tu peux agir ?
+
+**Précision utilisateur (verbatim exact)** :
+> J'ai pas demandé d'exclure Jade explicitement, au contraire c'est un projet important. J'ai dit qu'on ne travaillait dessus que quand on est sûrs de ce qu'on fait. C'est complètement différent.
+
+**Assistant (résumé non verbatim)** : a reconnu que Jade ne devait pas être exclu, a regardé sa PR de refonte actuelle et l'a considéré comme projet prioritaire mais nécessitant une intervention soigneusement isolée. A retenu `inference-companion-lab` **pour cette contribution seulement**, car un validateur indépendant de manifestes/protocoles est plus sûr qu'une modification des connecteurs vocaux ou assets Jade sans validation réelle. A créé la PR #2, sur branche propre, portant une porte de vérification offline sur les scénarios A0/A1 et A/B/C/D, avec tests de rejet et absence de données personnelles. **Aucun gain, aucune mesure du PC, aucune expérience d'inférence ni modification de Jade réalisés.** Les fichiers git, la CI et le journal sont la preuve du travail effectivement exécuté, pas le présent résumé.
