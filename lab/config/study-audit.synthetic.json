@@ -1,0 +1,170 @@
+{
+  "protocol": {
+    "schema_version": 1,
+    "experiment_id": "synthetic-demo-not-a-run",
+    "protocol_status": "candidate_not_frozen",
+    "origin": "synthetic",
+    "fidelity_contract": "E1",
+    "model_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "engine_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "tokenizer_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "prompt_suite_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+    "trace_sha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    "minimum_gain_pct": 5,
+    "min_blocks": 2,
+    "minimum_improved_blocks": 2,
+    "max_canary_p99_ms": 120,
+    "max_canary_p99_regression_pct": 10,
+    "max_observer_p99_regression_pct": 3,
+    "fixed_window_seconds": 60,
+    "seed": 42
+  },
+  "observer_preflight": [
+    {
+      "block_id": "synthetic-1",
+      "condition": "A0",
+      "canary_p99_ms": 95,
+      "observed_cpu_pct": 0
+    },
+    {
+      "block_id": "synthetic-1",
+      "condition": "A1",
+      "canary_p99_ms": 96,
+      "observed_cpu_pct": 1
+    },
+    {
+      "block_id": "synthetic-2",
+      "condition": "A0",
+      "canary_p99_ms": 95,
+      "observed_cpu_pct": 0
+    },
+    {
+      "block_id": "synthetic-2",
+      "condition": "A1",
+      "canary_p99_ms": 96,
+      "observed_cpu_pct": 1
+    }
+  ],
+  "runs": [
+    {
+      "block_id": "synthetic-1",
+      "scenario": "A",
+      "accepted_tokens": 0,
+      "canary_p99_ms": 100,
+      "e1_tokens_match_oracle": true,
+      "stop_triggered": false,
+      "duration_seconds": 60,
+      "seed": 42,
+      "model_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "engine_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "tokenizer_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "prompt_suite_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "trace_sha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+    },
+    {
+      "block_id": "synthetic-1",
+      "scenario": "B",
+      "accepted_tokens": 100,
+      "canary_p99_ms": 104,
+      "e1_tokens_match_oracle": true,
+      "stop_triggered": false,
+      "duration_seconds": 60,
+      "seed": 42,
+      "model_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "engine_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "tokenizer_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "prompt_suite_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "trace_sha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+    },
+    {
+      "block_id": "synthetic-1",
+      "scenario": "C",
+      "accepted_tokens": 150,
+      "canary_p99_ms": 160,
+      "e1_tokens_match_oracle": true,
+      "stop_triggered": false,
+      "duration_seconds": 60,
+      "seed": 42,
+      "model_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "engine_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "tokenizer_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "prompt_suite_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "trace_sha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+    },
+    {
+      "block_id": "synthetic-1",
+      "scenario": "D",
+      "accepted_tokens": 110,
+      "canary_p99_ms": 105,
+      "e1_tokens_match_oracle": true,
+      "stop_triggered": false,
+      "duration_seconds": 60,
+      "seed": 42,
+      "model_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "engine_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "tokenizer_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "prompt_suite_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "trace_sha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+    },
+    {
+      "block_id": "synthetic-2",
+      "scenario": "A",
+      "accepted_tokens": 0,
+      "canary_p99_ms": 100,
+      "e1_tokens_match_oracle": true,
+      "stop_triggered": false,
+      "duration_seconds": 60,
+      "seed": 42,
+      "model_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "engine_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "tokenizer_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "prompt_suite_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "trace_sha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+    },
+    {
+      "block_id": "synthetic-2",
+      "scenario": "B",
+      "accepted_tokens": 100,
+      "canary_p99_ms": 104,
+      "e1_tokens_match_oracle": true,
+      "stop_triggered": false,
+      "duration_seconds": 60,
+      "seed": 42,
+      "model_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "engine_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "tokenizer_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "prompt_suite_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "trace_sha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+    },
+    {
+      "block_id": "synthetic-2",
+      "scenario": "C",
+      "accepted_tokens": 150,
+      "canary_p99_ms": 160,
+      "e1_tokens_match_oracle": true,
+      "stop_triggered": false,
+      "duration_seconds": 60,
+      "seed": 42,
+      "model_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "engine_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "tokenizer_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "prompt_suite_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "trace_sha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+    },
+    {
+      "block_id": "synthetic-2",
+      "scenario": "D",
+      "accepted_tokens": 110,
+      "canary_p99_ms": 105,
+      "e1_tokens_match_oracle": true,
+      "stop_triggered": false,
+      "duration_seconds": 60,
+      "seed": 42,
+      "model_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "engine_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "tokenizer_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "prompt_suite_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "trace_sha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+    }
+  ]
+}

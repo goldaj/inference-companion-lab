@@ -1,0 +1,33 @@
+name: Offline research evidence audit
+on:
+  push:
+    branches: ["chatgpt/trial-audit-gate-20261027"]
+  pull_request:
+    branches: ["chatgpt/research-review-20261025"]
+permissions:
+  contents: read
+concurrency:
+  group: evidence-audit-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  stdlib-offline-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Compile pure study auditor
+        run: python -m compileall -q lab/scripts/audit_experiment.py tests/test_audit_experiment.py
+      - name: Unit and adversarial tests
+        run: python -m unittest discover -s tests -v
+      - name: Demonstrate fail-closed synthetic study
+        shell: bash
+        run: |
+          set +e
+          python lab/scripts/audit_experiment.py lab/config/study-audit.synthetic.json > "$RUNNER_TEMP/audit-result.json"
+          code=$?
+          set -e
+          test "$code" -eq 1
+          python -c 'import json,sys; r=json.load(open(sys.argv[1], encoding="utf-8")); assert r["decision"] == "NOT_ADMISSIBLE"; assert "SYNTHETIC_NOT_EMPIRICAL_EVIDENCE" in r["problems"]; assert "PROTOCOL_NOT_PREREGISTERED" in r["problems"]' "$RUNNER_TEMP/audit-result.json"
