@@ -123,3 +123,10 @@ Le propriétaire souhaite montrer aussi ses recherches, réflexions et projets i
 La revue Gitleaks n’a détecté aucun secret dans les fichiers ni dans les références Git examinées. Le profil d’hôte contient des caractéristiques matérielles génériques et pas de numéro de série ni d’identifiant unique ; les personnages du panel sont fictifs. Cette vérification ne constitue pas une preuve mathématique d’absence de toute information sensible.
 
 Cette décision remplace uniquement la visibilité privée adoptée dans ADR-013. Les modèles, données personnelles, traces brutes et artefacts lourds restent locaux et interdits dans Git. L’historique de la sauvegarde privée initiale est conservé. Aucune promesse de performance, expérience supplémentaire ou implémentation n’est ajoutée par cette publication.
+
+## ADR-017 — Premier observateur L0 limité à un canari de réveil
+
+Date : 2026-10-29
+Statut : expérimental, branche de revue non fusionnée
+
+La première tranche exécutable mesure uniquement les retards de réveil et le CPU de son propre processus. Pas de modèle, système, GPU, mémoire privée ou changement de priorité. Motivation : instrumenter le protocole non privilégié de façon vérifiable avant d'optimiser. Ne pas prétendre que cette instrumentation constitue le benchmark A/B/C/D ou prouve une absence de gêne. Voir `docs/OBSERVATEUR_L0.md`.
