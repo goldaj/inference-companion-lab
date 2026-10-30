@@ -1,3 +1,11 @@
+## Addendum contribution ChatGPT du 27/10/2026, branche isolée
+
+**PR #2 :** https://github.com/goldaj/inference-companion-lab/pull/2
+Branche `chatgpt/trial-audit-gate-20261027` dérivée de `chatgpt/research-review-20261025`, sans modifier `codex/foundation`.
+Lire `docs/AUDIT_EXPERIENCES_HORS_LIGNE_20261027.md` avant de reprendre `lab/scripts/audit_experiment.py`. Il s'agit d'une **porte documentaire/de données agrégées** : aucune inference, aucune collecte ni expérimentation réelle. L'outil n'émet JAMAIS « succès scientifique » : `REVIEW_REQUIRED` impose une validation extérieure. La fixture de laboratoire est fictive et volontairement `NOT_ADMISSIBLE`. Ne jamais remplacer le modèle choisi par le propriétaire, inventer de mesures ou activer une allocation du PC. La présente PR nécessite une revue et ne doit pas être fusionnée automatiquement.
+
+---
+
 # Instructions permanentes du projet
 
 Ce dépôt porte le programme de recherche « superoptimiseur d’inférence intégrale », en commençant par le **mode compagnon** sur le poste Windows initial.

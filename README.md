@@ -70,3 +70,7 @@ Comparer, sur une même trace d’activité :
 Le compagnon doit produire davantage de tokens validés que le profil statique conservateur tout en respectant le même budget d’interférence utilisateur et en évitant les dégradations du profil agressif.
 
 Le premier code sera donc un **observateur passif**, pas un nouvel engine ni un optimiseur de modèle.
+
+## Instrument L0 opérationnel (2026-10-29)
+
+Premier canari non privilégié dans `lab/scripts/observe_passive.py`, qui mesure les retards de réveil et la charge du processus de mesure sans modèle ni modification système. Lancement : `python lab/scripts/observe_passive.py` ; guide [docs/OBSERVATEUR_L0.md](docs/OBSERVATEUR_L0.md). Les essais réels sur la machine cible et le protocole E1 restent à faire.

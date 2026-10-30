@@ -16,3 +16,9 @@ Lire en premier PROJECT_STATE.md, CONTEXT_TRANSFER.md, docs/GOUVERNANCE_DOCUMENT
 
 ## Restant à intégrer
 Les conversations complètes, toutes les réponses exactes de l'assistant et les horodatages manquants nécessitent un export authentique. Quand il est disponible, ajouter les messages dans l'ordre en distinguant Utilisateur (verbatim), Assistant (verbatim) et résumé reconstruit. Examiner d'abord la confidentialité. Ne jamais modifier les anciens documents de contexte sans nécessité.
+
+## 2026-10-29 — Évolution vers observateur L0
+
+Utilisateur (verbatim, heure non certifiée) : « Je ne te demande pas de créer une tâche planifiée qui continue chaque jour. Je te demande de continuer maintenant en boucle et de ne pas t'arrêter sur juste 3 améliorations alors qu'il y a plus de 40 repo et plusieurs améliorations possibles par repo ».
+
+Assistant (résumé non verbatim) : poursuite multi-repo immédiate. Sélection d'Inference Companion Lab pour commencer la phase de mesure L0 non privilégiée : canari de retard d'ordonnancement, coût CPU propre, sortie JSON et export sécurisé opt-in vers le laboratoire. L'outil n'exécute aucun modèle et ne modifie pas la machine. Tests et limites détaillés dans `docs/OBSERVATEUR_L0.md`.

@@ -122,3 +122,7 @@ Les règles détaillées et la matrice de mise à jour se trouvent dans `docs/GO
 ## Prompt de reprise conseillé
 
 > Reprends le projet de superoptimiseur d’inférence intégrale dans le dépôt indiqué. Lis d’abord `AGENTS.md`, `PROJECT_STATE.md`, `CONTEXT_TRANSFER.md`, `docs/GOUVERNANCE_DOCUMENTAIRE.md` et `docs/RAPPORT_FONDATEUR.md`. Le mode compagnon non destructif est la priorité. Le modèle est imposé et ne doit pas être remplacé. Git est la source documentaire principale. Vérifie l’état Git, le suivi distant et les changements existants avant toute édition. Après toute tâche significative, mets à jour la documentation concernée, valide, commite, pousse et vérifie le hash distant. Ne commence pas par installer un moteur, transformer le modèle ou demander des privilèges : commence par la prochaine décision encore ouverte dans `PROJECT_STATE.md`, sauf instruction plus récente de l’utilisateur.
+
+## Addendum 2026-10-29 : exécution L0 isolée
+
+Une sonde non privilégiée à mesure limitée (`lab/scripts/observe_passive.py`) est disponible sur la branche `feat/l0-passive-canary-observer-20261029`. Elle mesure uniquement le retard de réveil CPU et son propre coût temporel ; elle imprime un JSON par défaut, avec export facultatif strictement confiné au laboratoire existant. Tests synthétiques et GitHub Actions. Ne pas confondre cet instrument avec un moteur d'inférence, une baseline A/B/C/D réalisée ou une mesure d'impact utilisateur. Les décisions de modèle, E1 et QoS demeurent ouvertes. Reprise exacte dans `docs/OBSERVATEUR_L0.md`.

@@ -57,3 +57,7 @@ Ce journal donne une vue humaine des jalons. Git demeure la preuve détaillée d
 **Validation :** JSON et liens Markdown locaux vérifiés, diff inspecté, contrôle des secrets et tailles exécuté avant commit. Aucun modèle, moteur, expérience d’inférence, service ou réglage du poste n’a été installé ou exécuté pour ce jalon.
 
 **Prochaine action scientifique inchangée :** finaliser la spécification expérimentale v0.1, puis réaliser l’observateur passif.
+
+## 2026-10-29 — Première sonde de mesure L0 (branche en revue)
+
+**Livraison :** code Python bibliothèque standard `lab/scripts/observe_passive.py`, protocole de retard de réveil, agrégations p50/p95/p99, mesure de temps CPU propre au processus, export JSON opt-in sans écrasement hors laboratoire, tests à horloge simulée et CI. Aucune lecture de contenu utilisateur, modèle d'inférence, installation ou modification système. **Limites :** pas de température, mémoire système, GPU, token/s ni QoS utilisateur ; mesure sur machine Windows de référence non exécutée. Aucun gain proclamé. Branche `feat/l0-passive-canary-observer-20261029`, PR à examiner avant fusion.

@@ -1,0 +1,139 @@
+# Dossier de transfert vers une autre conversation
+
+Version : 0.3
+Date : 2026-10-18
+Statut : contexte fondateur consolidé, publication documentaire autorisée
+
+## Résumé autonome
+
+L’utilisateur veut créer un système logiciel général d’optimisation de l’inférence locale. Le modèle est choisi par l’utilisateur et imposé au système. Il ne s’agit pas de recommander un modèle plus petit, mais d’obtenir le meilleur débit physiquement accessible pour le modèle retenu sur la machine disponible.
+
+La vision ultime est un hyper-runtime d’inférence réflexif : une couche portable reçoit le modèle, l’analyse et produit une exécution agressivement spécialisée pour chaque machine. Elle inventorie et mesure les ressources programmables, génère ou sélectionne des kernels, place les données et les opérations, contrôle la mémoire, tient compte de la puissance et de la température, vérifie la fidélité et apprend par autotuning.
+
+Les formulations littérales « chaque atome » et « optimum absolu garanti » ont été corrigées. Un logiciel ne peut exploiter que les degrés de liberté observables et contrôlables par l’ISA, les pilotes, le firmware ou les capteurs/actionneurs exposés. Il ne peut pas rendre programmable un bloc fixe, créer de la bande passante ou commander des particules sans interface. Il ne peut généralement pas prouver qu’aucun programme imaginable ne serait plus rapide. Il doit produire le meilleur plan validé trouvé, une borne supérieure conditionnelle, les hypothèses et l’écart restant.
+
+La recherche commencera par le **mode compagnon**. Celui-ci utilise la marge de ressources que le poste peut prêter sans dépasser un budget de gêne pour l’utilisateur. Il considère toutes les ressources, mais n’utilise que celles dont la contribution marginale est positive. Il ralentit ou se suspend lorsque l’utilisateur reprend les ressources minimales requises.
+
+Le modèle original est immuable. Les transformations sont séparées en quatre catégories :
+
+- niveau 0 : aucun changement du modèle, seulement orchestration du runtime ;
+- niveau 1 : artefacts dérivés exacts — poids réordonnés, empaquetage, layouts, kernels, constantes ;
+- niveau 2 : arithmétique ou représentation non bit-exacte, sous contrat de fidélité ;
+- niveau 3 : modification réelle du modèle, interdite par défaut et uniquement possible avec consentement explicite.
+
+Le premier jalon ne transforme pas le modèle. Il mesure et contrôle de façon non privilégiée.
+
+Le projet utilise un panel de douze individus synthétiques, et non de simples intitulés professionnels. Chaque membre possède une biographie, une identité, un tempérament, des valeurs, un rapport au risque, des biais, des relations et un style de contradiction stables. Les caractéristiques de sexe ou genre, d’âge, de nationalité, de langue, d’origine sociale, de situation familiale, de handicap ou de neurodivergence enrichissent le vécu fictif mais ne déterminent aucune conclusion technique. Le panel complet et son protocole sont dans `docs/PANEL_PERSONAS.md`.
+
+## Objectif du mode compagnon
+
+Maximiser le nombre de tokens acceptés du modèle cible sur une durée donnée, sous les contraintes suivantes :
+
+- budget d’interférence utilisateur respecté ;
+- mémoire et VRAM sous les budgets disponibles ;
+- température, puissance et stabilité dans les limites autorisées ;
+- fidélité au modèle imposé ;
+- aucune modification irréversible du poste.
+
+La notion centrale est le **slack** : non pas le pourcentage momentanément inutilisé, mais la marge que l’inférence peut emprunter sans violer la qualité de service de l’utilisateur. Cette marge comprend CPU, RAM, bande passante mémoire, GPU, VRAM, E/S, puissance et thermique.
+
+Le contrôle doit fonctionner à trois échelles :
+
+- boucle rapide : protection immédiate et retrait ;
+- boucle intermédiaire : choix d’un plan et migration ;
+- boucle lente : benchmark, compilation et apprentissage pendant les périodes libres.
+
+Le runtime doit disposer d’un portefeuille de plans validés correspondant à différentes enveloppes de ressources. Il ne doit pas recompiler continuellement. Il change de plan seulement si le gain futur estimé amortit la migration des poids, buffers et cache KV.
+
+## Premier résultat scientifique attendu
+
+Comparer quatre scénarios sur la même trace :
+
+- A : poste sans inférence ;
+- B : inférence statique conservatrice ;
+- C : inférence statique agressive ;
+- D : compagnon adaptatif élémentaire.
+
+Le scénario D réussit s’il produit davantage de tokens validés que B sous le même budget d’interférence, tout en évitant les dégradations de C.
+
+Le premier programme sera un observateur passif, puis un contrôleur simple à règles. Il ne doit pas commencer par un nouveau kernel, un nouvel OS, une transformation du modèle ou un contrôleur neuronal.
+
+## Règles de sûreté
+
+- Ne rien supprimer du poste en mode compagnon.
+- Ne pas arrêter de services ni modifier le firmware dans le premier jalon.
+- Aucun droit administrateur pour le premier observateur et le premier contrôleur.
+- Ne jamais désactiver les protections thermiques ou électriques.
+- Ne pas employer de vulnérabilités comme mécanisme d’optimisation.
+- Les fichiers de modèle et le code personnalisé sont des entrées non fiables.
+- Les futures actions privilégiées devront passer par un courtier minimal et transactionnel.
+- Toute modification devra être journalisée et réversible.
+- Seuls les tokens acceptés et conformes sont comptés.
+
+## Niveaux de fidélité
+
+- E0 : exactitude bit à bit.
+- E1 : mêmes tokens qu’une référence déterministe.
+- E2 : même distribution à une tolérance définie.
+- E3 : équivalence comportementale mesurée.
+
+Le contrat recommandé pour le premier prototype est E1.
+
+## Poste concret initial
+
+- Windows 10 Famille 64 bits, build 19045.
+- Intel Core i5-6600K, 4 cœurs/4 threads.
+- 16 Gio de RAM, 2 × 8 Gio à 2 133 MT/s.
+- NVIDIA GeForce GTX 1070, 8 Gio de VRAM, pilote 560.94.
+- SSD Samsung 750 EVO 250 Go : environ 14 Gio libres sur `C:` à l’inventaire.
+- HDD WDC 1 To : environ 372 Gio libres sur `D:`.
+- Fichier d’échange sur `D:`.
+- Profil d’alimentation « Performances élevées ».
+- GitHub CLI 2.99.0 est le seul logiciel ajouté pour le projet ; il sert à l’authentification et à la sauvegarde du dépôt, pas à l’inférence.
+
+## Répertoires
+
+- Dépôt Git : `C:\Users\golda\Documents\ChatGPT\software d'optimisation générale d'inférence`
+- Branche : `codex/foundation`
+- Dépôt GitHub public (décision du 2026-10-18) : `https://github.com/goldaj/inference-companion-lab`
+- Remote : `origin`
+- Laboratoire de données : `D:\InferenceCompanionLab`
+- Modèles originaux : `D:\InferenceCompanionLab\models`
+- Artefacts dérivés : `D:\InferenceCompanionLab\derived`
+- Traces : `D:\InferenceCompanionLab\traces`
+- Exécutions : `D:\InferenceCompanionLab\runs`
+- Résultats : `D:\InferenceCompanionLab\results`
+- Exports : `D:\InferenceCompanionLab\exports`
+- Temporaire : `D:\InferenceCompanionLab\tmp`
+- Quarantaine : `D:\InferenceCompanionLab\quarantine`
+
+## État exact et prochaine étape
+
+La structure de laboratoire et la documentation fondatrice ont été initialement sauvegardées dans un dépôt GitHub privé ; la visibilité publique est autorisée le 2026-10-18 pour présenter le travail de recherche dans le portfolio après audit des fichiers et de l’historique. Il n’existe pas encore de moteur propre au projet. Aucune dépendance d’inférence n’a été installée. La seule installation ajoutée est GitHub CLI 2.99.0 ; aucune configuration matérielle, aucun service, pilote ou firmware n’a été modifié.
+
+La prochaine étape est de finaliser la spécification expérimentale v0.1 : choisir le modèle initial, le moteur de référence, la génération déterministe, les contextes, les canaris, le budget de gêne et la durée des traces. Ensuite, construire l’observateur passif.
+
+## Gouvernance documentaire
+
+Git est la source principale de la documentation, du code, des protocoles et des résultats synthétiques. Une décision uniquement conversationnelle reste provisoire. Après chaque tâche significative, la personne ou l’agent responsable doit examiner les documents concernés, mettre à jour `PROJECT_STATE.md` et `docs/JOURNAL_TRAVAUX.md` lorsque nécessaire, valider le diff, créer un commit cohérent, pousser vers `origin` et vérifier que les hashes local et distant correspondent.
+
+Les règles détaillées et la matrice de mise à jour se trouvent dans `docs/GOUVERNANCE_DOCUMENTAIRE.md`. Les modèles, traces et résultats lourds restent hors Git dans `D:\InferenceCompanionLab`, avec provenance représentée par des manifestes et hachages.
+
+## Prompt de reprise conseillé
+
+> Reprends le projet de superoptimiseur d’inférence intégrale dans le dépôt indiqué. Lis d’abord `AGENTS.md`, `PROJECT_STATE.md`, `CONTEXT_TRANSFER.md`, `docs/GOUVERNANCE_DOCUMENTAIRE.md` et `docs/RAPPORT_FONDATEUR.md`. Le mode compagnon non destructif est la priorité. Le modèle est imposé et ne doit pas être remplacé. Git est la source documentaire principale. Vérifie l’état Git, le suivi distant et les changements existants avant toute édition. Après toute tâche significative, mets à jour la documentation concernée, valide, commite, pousse et vérifie le hash distant. Ne commence pas par installer un moteur, transformer le modèle ou demander des privilèges : commence par la prochaine décision encore ouverte dans `PROJECT_STATE.md`, sauf instruction plus récente de l’utilisateur.
+
+## Addendum de recherche, 25 octobre 2026 (proposition non fusionnée)
+
+Branche indépendante `chatgpt/research-review-20261025` : la note
+`docs/PROTOCOLE_EXPERIMENTAL_CANDIDAT_20261025.md` propose d'établir
+le coût de l'observateur (A0/A1) avant d'utiliser l'inférence, puis de
+comparer A/B/C/D à protocole/trace/thermique contrôlés. Elle fournit
+critères de falsification et d'arrêt, et distingue indices de charge et
+absence réelle de gêne. Aucun modèle, aucune mesure et aucune décision
+permanente. À relire avant de choisir les paramètres du premier run.
+
+
+## Addendum 27/10/2026 — outillage de contrôle hors ligne pour Codex, PR #2
+
+Contribution autonome sur `chatgpt/trial-audit-gate-20261027` → `chatgpt/research-review-20261025` : `lab/scripts/audit_experiment.py` vérifie la cohérence déclarée des données agrégées A0/A1 et A/B/C/D : hash modèle/moteur/tokenizer/trace/prompt, seed, fenêtre, E1, stop, QoS, gain, paires et effectifs. Il refuse les valeurs synthétiques comme preuves et déclare `REVIEW_REQUIRED` pour les entrées admissibles à une revue humaine, sans jamais certifier une expérience. Lire `docs/AUDIT_EXPERIENCES_HORS_LIGNE_20261027.md` et PR https://github.com/goldaj/inference-companion-lab/pull/2 ; cette note ne remplace pas la fondation et n'autorise aucun transfert de données ou installation. Les paramètres de modèle/moteur/budget demeurent non choisis.
