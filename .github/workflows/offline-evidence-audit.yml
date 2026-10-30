@@ -1,9 +1,9 @@
 name: Offline research evidence audit
 on:
   push:
-    branches: ["chatgpt/trial-audit-gate-20261027"]
+    branches: ["codex/foundation"]
   pull_request:
-    branches: ["chatgpt/research-review-20261025"]
+    branches: ["codex/foundation"]
 permissions:
   contents: read
 concurrency:
