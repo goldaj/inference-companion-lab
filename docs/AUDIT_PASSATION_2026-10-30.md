@@ -24,3 +24,9 @@ Interrogation GitHub directe de 4 branches, 3 PR et racine. Aucune mesure sur le
 5. Les trois anciennes branches sont ancêtres de `codex/foundation`; la PR #3 a été fusionnée, ne créer aucune PR de rattrapage redondante.
 
 Ne pas activer d'optimisation système intrusive ni d'inférence de secrets. Résultats hors ligne à documenter avant claims.
+
+
+## Observation CI GitHub (30 octobre 2026)
+- [Observer L0 tests](https://github.com/goldaj/inference-companion-lab/actions/runs/41046796350) : **success** ; [Offline research evidence audit](https://github.com/goldaj/inference-companion-lab/actions/runs/41046796256) : **success**, sur commit documentaire.
+
+Les contrôles ci-dessus ne démontrent ni la validité fonctionnelle en environnement réel ni la publication d'une release. Ne pas substituer ce statut aux tests manuels et matériels prévus dans la passation.
